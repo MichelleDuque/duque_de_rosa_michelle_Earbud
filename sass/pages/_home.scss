@@ -1,0 +1,108 @@
+@use '../abstracts/variables' as h;
+
+//Hero Image
+
+#hero-box{
+    padding: 0;
+    background-color: transparent;
+}
+
+#hero-box span{
+    color: h.$body-text-color;
+}
+
+#hero-box h2{
+    line-height: 1em
+}
+
+
+
+// Info
+
+
+#info-box-title{
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 70px;
+    background-color: h.$primary-color;
+}
+
+#home-section{
+    padding: 0;
+    margin-top: 40px;
+}
+
+#info-box-title h2{
+    margin-top: 40px;
+    font-size: 35px;
+    color: h.$body-text-color;
+}
+
+
+#info-box-main{
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-color: h.$primary-color;
+}
+
+.info-box-divided h3{
+    color: h.$secondary-color;
+}
+
+
+//Phrase
+
+#phrase-box{
+    padding: 0;
+    background-color: transparent;
+}
+
+#phrase-box h2{
+    font-size: 58px;
+}
+
+#phrase-box h2 span{
+    color: h.$body-text-color;
+}
+
+//Review
+
+#review-box{
+    background-color: transparent;
+}
+
+#box-review-info{
+    background-color: h.$primary-color;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#box-review-info img{
+    margin-top: 30px;
+}
+
+
+
+#stars-review img{
+    height: 31px;
+}
+
+#review-text-box{
+    height: 170px;
+}
+
+#review-text-box h3{
+    margin-top: 20px;
+    color: h.$secondary-color;
+    font-size: 15px;
+}
+
+#review-text-box p{
+    margin-top: 25px;
+    font-size: 12px;
+}
+
+#circles{
+    padding-top: 10px;
+}
