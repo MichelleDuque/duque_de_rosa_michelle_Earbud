@@ -10,6 +10,7 @@ img, embed, object, video, picture {
 
 html {
   box-sizing: border-box; 
+  background-color: #0F0F0F;
 }
 
 *, *::before, *::after {

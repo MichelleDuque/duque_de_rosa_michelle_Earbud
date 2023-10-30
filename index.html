@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <title>Rock Revolution</title>
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -19,6 +22,9 @@
 
         <div class="box col-start-4 col-end-5" id="burger-nav">
             <h2 class="hidden">Main Navigation</h2>
+            <label for="hamburger">
+                <img src="images/burger_menu.png" alt="hamburger menu icon">
+            </label>
         </div>
     </header>
     
@@ -27,23 +33,143 @@
         <section class="grid-con" id="home-section">
             <h2 class="hidden">Home Section - Rock Revolution</h2>
             <div class="box col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10 xl-col-start-3 xl-col-end-11" id="hero-box">
+                <div>
+                    <h2><span>DISCOVER</span>
+                        <br>
+                        ROCK REVOLUTION
+                    </h2>
+                </div>
+                <div >
+                    <img src="images/earbuds-hero.svg" alt="Blue Earbuds">
+                </div>
             </div>
+
+            
             <div class="box col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6 xl-col-start-1 xl-col-end-6" id="info-box-title">
+                <h2>FROM HEAVY METAL<br>TO GLAM ROCK</h2>
             </div>
             <div class="box col-span-full m-col-start-6 m-col-end-13 l-col-start-6 l-col-end-13 xl-col-start-6 xl-col-end-13" id="info-box-main">
+                <div class="info-box-divided">
+                    <img src="images/bass.png" alt="">
+                    <h3>Characteristic 1</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.  Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s,  when an 
+                        unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
+                    </p>
+                </div>
+                <div class="info-box-divided">
+                    <img src="images/drums.png" alt="">
+                    <h3>Characteristic 2</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.  Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s,  when an 
+                        unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
+                    </p>
+                </div>
+                <div class="info-box-divided">
+                    <img src="images/microphone.png" alt="">
+                    <h3>Characteristic 2</h3>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.  Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s,  when an 
+                        unknown printer took a galley of type and scrambled it to 
+                        make a type specimen book.
+                    </p>
+                </div>
             </div>
+
+
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="earbuds-box">
+                <model-viewer id="model" src="model/earpodar.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="images/poster.webp" shadow-intensity="1" environment-image="images/aircraft_workshop_01_1k.hdr" exposure="1.7" camera-orbit="52.34deg 88.29deg 874.8m" field-of-view="30deg">
+
+                    <button class="Hotspot" slot="hotspot-1" data-position="-0.35684146431410635m 0.4484638797395864m 0.19529437420565557m" data-normal="-0.2214895729103947m 0.0638100264421356m 0.9730727874200497m" data-visibility-attribute="visible">
+                      <div class="HotspotAnnotation" id="hotspot-1"></div>
+                  </button>
+              
+                  <button class="Hotspot" slot="hotspot-2" data-position="-0.8495230261004242m 0.4287818090302739m -0.0064143154611225345m" data-normal="-0.9999999999999996m 0m 3.422854295029559e-8m" data-visibility-attribute="visible">
+                      <div class="HotspotAnnotation" id="hotspot-2"></div>
+                  </button>
+              
+                  <button class="Hotspot" slot="hotspot-3" data-position="-0.7873419508444182m 0.15746685566848728m 0.03740474962852166m" data-normal="-0.8341606075897209m -0.04343428645273796m 0.5498086426256767m" data-visibility-attribute="visible">
+                      <div class="HotspotAnnotation" id="hotspot-3"></div>
+                  </button>
+              
+                  <button class="Hotspot" slot="hotspot-4" data-position="-0.8419109695662055m 0.5302643902155425m -0.011569693945667966m" data-normal="-0.9999999999996463m -8.406073314139677e-7m 2.8248691102752718e-8m" data-visibility-attribute="visible">
+                      <div class="HotspotAnnotation" id="hotspot-4"></div>
+                  </button>
+                  
+                  <div class="progress-bar hide" slot="progress-bar">
+                      <div class="update-bar"></div>
+                  </div>
+                  <button slot="ar-button" id="ar-button">
+                      View in your space
+                  </button>
+                    <div id="ar-prompt">
+                        <img src="images/ar_hand_prompt.png" alt="Arm holding a cellphone">
+                    </div>
+                  </model-viewer>  
             </div>
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-span-full" id="phrase-box">
+                <h2><span>We're Gonna</span><br>Rock Around the<br>Clock
+                </h2>
             </div>
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="xray-box">
+                <h2 class="hidden">X-Ray Revealer</h2>
+                <div id="outerShell">
+                    <div id="imageCon">
+                        <!-- x-ray version -->
+                        <div class="slideImage image-right"></div>
+                        <!-- rendered version -->
+                        <div class="slideImage image-left"></div>
+                        <!-- Drag bar -->
+                        <div class="slideImage image-drag"></div>
+                    </div>
+            </div>
             </div>
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-col-span-full" id="review-box">
+                <h2 class="hidden">Reviews</h2>
+                <div id="box-review-info">
+                        <img src="images/review_image.png" alt="">
+                        <div id="stars-review">
+                            <img src="images/star.png" alt="Blue Earbuds">
+                            <img src="images/star.png" alt="Blue Earbuds">
+                            <img src="images/star.png" alt="Blue Earbuds">
+                            <img src="images/star.png" alt="Blue Earbuds">
+                            <img src="images/star.png" alt="Blue Earbuds">
+                        </div>
+                    <div id="review-text-box">
+                        <h3>Name of Client</h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.  Lorem Ipsum has been the industry's 
+                            standard dummy text ever since the 1500s,  when an 
+                            unknown printer took a galley of type and scrambled it to 
+                            make a type specimen book.
+                        </p>
+                    </div>
+                </div>
+                <div id="circles">
+                    <img src="images/circle.png" alt="">
+                    <img src="images/circle.png" alt="">
+                    <img src="images/circle.png" alt="">
+                </div>
             </div>
 
 
         </section>
 
     </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
