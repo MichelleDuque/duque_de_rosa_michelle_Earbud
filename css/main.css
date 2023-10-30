@@ -1,1 +1,12 @@
-/*# sourceMappingURL=main.css.map */
+#main-nav {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #burger-nav {
+    display: none;
+  }
+  #main-nav {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */
