@@ -1,5 +1,10 @@
 (() => {
+
+
     //console.log("IIFE Fired");
+
+    //MODEL
+
     //variables
 
     const model = document.querySelector("#model");
@@ -99,6 +104,27 @@
         { opacity: 2, x: 0},
         1
       );
+
+
+
+      //Scroll Menu - Main Nav
+
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.registerPlugin(ScrollToPlugin);
+
+      const navLinks = document.querySelectorAll("#main-header nav ul li a");
+      console.log(navLinks)
+
+      function scrollLink(e) {    
+        e.preventDefault(); 
+        console.log(e.currentTarget.hash);
+        let selectedLink = e.currentTarget.hash;
+        gsap.to(window, {duration: 1, scrollTo:{y:`${selectedLink}`, offsetY:50 }});
+      }
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", scrollLink);
+      });
 
 
 })();

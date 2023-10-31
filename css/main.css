@@ -19,6 +19,15 @@ p {
   display: none;
 }
 
+#logo-section {
+  padding: 0;
+  background-color: transparent;
+}
+
+#burger-nav {
+  background-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
   #burger-nav {
     display: none;
@@ -49,15 +58,24 @@ p {
     padding-bottom: 7px;
     border-bottom: 2px solid #EEEEEE;
   }
+  #logo-section img {
+    height: 70px;
+  }
 }
 @media screen and (min-width: 1200px) {
   #main-nav ul li a {
     font-size: 40px;
   }
+  #logo-section img {
+    height: 80px;
+  }
 }
 @media screen and (min-width: 1920px) {
   #main-nav ul li a {
     font-size: 60px;
+  }
+  #logo-section img {
+    height: 100px;
   }
 }
 #burger-nav {
@@ -257,6 +275,10 @@ model-viewer > #ar-prompt > img {
   padding: 0;
   margin: 0;
   background-color: transparent;
+}
+
+#explode-view {
+  max-width: 100%;
 }
 
 #hero-box {
