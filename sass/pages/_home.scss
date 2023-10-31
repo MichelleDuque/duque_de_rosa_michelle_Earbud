@@ -106,3 +106,186 @@
 #circles{
     padding-top: 10px;
 }
+
+
+
+@media screen and (min-width:768px) {
+
+    //Hero Image
+
+    #hero-box h2{
+        font-size: 70px;
+        // line-height: 1em
+    }
+
+    //Info
+
+    #info-box-title{
+        margin: 0;
+    }
+
+    #info-box-main{
+        display:flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    #info-box-main > * {
+        width:50%;
+        padding:1rem;
+    }
+
+    .info-box-divided{
+        display: flex;
+    }
+
+    .info-box-divided img{
+        height: 43px;
+        max-width: none;
+        margin-right: 10px;
+    }
+
+
+    //Phrase
+
+    #phrase-box h2{
+        font-size: 104px;
+    }
+
+    //Review
+
+    #box-review-info{
+        display: flex;
+        align-items: center;
+    }
+
+    #box-review-info > * {
+        width:50%;
+        padding:1rem;
+    }
+
+    #information-responsive{
+        text-align: left;
+    }
+
+    #image-review img{
+        margin: auto;
+        display: block;
+    }
+
+    #circles img{
+        height: 15px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+
+     //Hero Image
+
+     #hero-box h2{
+        font-size: 100px;
+    }
+
+    //Info
+
+    #info-box-title h2{
+        font-size: 65px;
+    }
+
+    .info-box-divided{
+        font-size: 19px;
+    }
+
+    .info-box-divided img{
+        height: 71px;
+    }
+
+    //Phrase
+
+    #phrase-box h2{
+        font-size: 174px;
+    }
+
+    //Reviews
+
+    #review-text-box h3{
+        font-size: 26px;
+    }
+
+    #review-text-box p{
+        font-size: 26px;
+    }
+
+    #image-review img{
+        height: 301px;
+    }
+
+    #stars-review img{
+        height: 52px;
+    }
+
+    #review-text-box{
+        height: 320px;
+    }
+
+    #circles img{
+        height: 27px;
+    }
+
+}
+
+@media screen and (min-width:1920px){
+
+     //Hero Image
+
+     #hero-box h2{
+        font-size: 170px;
+    }
+
+     //Info
+
+     #info-box-title h2{
+        font-size: 100px;
+    }
+
+    .info-box-divided{
+        font-size: 30px;
+    }
+
+    .info-box-divided img{
+        height: 106px;
+    }
+
+    //Phrase
+
+    #phrase-box h2{
+        font-size: 262px;
+    }
+
+    //Reviews
+
+    #review-text-box h3{
+        font-size: 40px;
+    }
+
+    #review-text-box p{
+        font-size: 40px;
+    }
+
+    #image-review img{
+        height: 452px;
+    }
+
+    #stars-review img{
+        height: 78px;
+    }
+
+    #review-text-box{
+        height: 500px;
+    }
+
+    #circles img{
+        height: 40px;
+    }
+
+}
