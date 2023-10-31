@@ -11,7 +11,7 @@
 
   model-viewer {
     width: auto;
-    max-width: 1200px;
+    max-width: 1920px;
     height: 500px;
     background: b.$background-color;
     background: b.$background-color-degrade;
@@ -135,3 +135,15 @@
   width: 50%;
 }
 
+
+@media screen and (min-width:1200px){
+  model-viewer{
+    height: 700px;
+  }
+}
+
+@media screen and (min-width:1920px){
+  model-viewer{
+    height: 1000px;
+  }
+}
