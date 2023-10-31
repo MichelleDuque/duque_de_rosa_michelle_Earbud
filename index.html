@@ -11,19 +11,20 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <h1 class="hidden">Portfolio</h1>
+    <h1 class="hidden">Rock Revolution</h1>
     <header id="main-header" class="grid-con">
 
         <nav class="box m-col-start-1 m-col-end-10 l-col-start-1 l-col-end-9 xl-col-start-1 xl-col-end-10" id="main-nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="projects.html">FEATURES</a></li>
-                <li><a href="reel.html">REVIEWS</a></li>
+                <li><a href="#info-box-main">ABOUT</a></li>
+                <li><a href="#earbuds-box">FEATURES</a></li>
+                <li><a href="#review-box">REVIEWS</a></li>
             </ul>
         </nav>
 
         <div class="box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 xl-col-start-11 xl-col-end-13" id="logo-section">
+            <img id="image-logo" src="images/white_logo.svg" alt="Rock Revolution Logo">
         </div>
 
         <div class="box col-start-4 col-end-5" id="burger-nav">
@@ -138,6 +139,11 @@
                     </div>
                   </model-viewer>  
             </div>
+
+            <div class="box col-span-full" id="animation-box">
+                <canvas id="explode-view"></canvas> 
+            </div>
+
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-span-full" id="phrase-box">
                 <h2><span>We're Gonna</span><br>Rock Around the<br>Clock
                 </h2>
@@ -154,10 +160,6 @@
                         <div class="slideImage image-drag"></div>
                     </div>
             </div>
-            </div>
-
-            <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="animation-box">
-                <img src="images/animation_image.png" alt="">
             </div>
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-col-span-full" id="review-box">
                 <h2 class="hidden">Reviews</h2>
@@ -201,6 +203,9 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
