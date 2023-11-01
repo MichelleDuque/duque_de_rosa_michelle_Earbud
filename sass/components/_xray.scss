@@ -1,43 +1,60 @@
+
 #xray-box{
     padding: 0;
+    background-color: transparent;
 }
 
 #outerShell{
-    max-width: 1920px;
-    border: solid 1px #666;
+    display: none;
 }
 
-#imageCon{
-    position: relative;
-    max-width: 1920px;
-    height: 100vh;
-}
 
-.slideImage{
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 100vh;
-}
 
-.image-right{
-    background: url(../images/x-ray.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed; //fixed into place both images so they are in the same place
-}
+@media screen and (min-width:1200px) {
 
-.image-left{
-    background: url(../images/ear_bud_red.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 50%;
-    background-attachment: fixed; //fixed into place both images so they are in the same place
-}
+    #mobile-tablet-view{
+        display: none;
+    }
 
-.image-drag{
-    background-color: #666;
-    left: 50%;
-    width: 4px;
-    cursor: pointer;
+    #outerShell {
+        display: block;
+        max-width: 1920px;
+        border: solid 1px #666;
+    }
+    
+    #imageCon {
+        position: relative;
+        max-width: 1920px;
+        height: 100vh;
+    }
+    
+    .slideImage {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100vh;
+    }
+    
+    .image-right {
+        background: url(../images/x-ray.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+    
+    .image-left {
+        background: url(../images/ear_bud_red.jpg) no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 50%;
+        background-attachment: fixed;
+    }
+    
+    .image-drag {
+        background-color: #666;
+        left: 50%;
+        width: 10px;
+        cursor: pointer;
+    }
+    
 }

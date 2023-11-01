@@ -29,11 +29,18 @@
 
         <div class="box col-start-4 col-end-5" id="burger-nav">
             <h2 class="hidden">Main Navigation</h2>
-            <label for="hamburger">
-                <img src="images/burger_menu.png" alt="hamburger menu icon">
-            </label>
+			<button class="hamburger">
+				<img src="images/burger_menu.png" alt="Burger Menu" id="hamburger-image">
+			</button>  
         </div>
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
     </header>
+
     
 
     <main id="main-home">
@@ -150,6 +157,10 @@
             </div>
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="xray-box">
                 <h2 class="hidden">X-Ray Revealer</h2>
+                <div id="mobile-tablet-view">
+                    <img src="images/x-ray.jpg" alt="xray earbud">
+                    <img src="images/ear_bud_red.jpg" alt="Regular earbud">
+                </div>
                 <div id="outerShell">
                     <div id="imageCon">
                         <!-- x-ray version -->
@@ -205,6 +216,8 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/xray.js"></script>
+    <script src="js/burger.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/main.js"></script>
 </body>
