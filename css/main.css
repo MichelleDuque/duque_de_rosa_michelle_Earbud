@@ -175,9 +175,9 @@ model-viewer {
   color: rgba(0, 0, 0, 0.8);
   display: block;
   font-size: 18px;
-  font-weight: 700;
-  left: calc(100% + 1em);
-  max-width: 300px;
+  font-weight: 600;
+  left: calc(50% + 1em);
+  max-width: 100px;
   overflow-wrap: break-word;
   padding: 0.5em 1em;
   position: absolute;
@@ -188,20 +188,21 @@ model-viewer {
 
 .HotspotAnnotation p {
   color: #333;
-  line-height: 22px;
+  line-height: 10px;
+  font-size: 10px;
   font-weight: 300;
   font-family: "Raleway", sans-serif;
 }
 
 .HotspotAnnotation h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
   font-family: "Bebas Neue", sans-serif;
 }
 
 model-viewer::part(default-progress-bar) {
   height: 30px;
-  background-color: #E89B36;
+  background-color: #232D3F;
 }
 
 /* AR Rules */
@@ -273,14 +274,55 @@ model-viewer > #ar-prompt > img {
   width: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .HotspotAnnotation {
+    max-width: 200px;
+    top: 50%;
+  }
+  .HotspotAnnotation p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+  .HotspotAnnotation h2 {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 700px;
+  }
+  .HotspotAnnotation {
+    left: calc(100% + 1em);
+    max-width: 300px;
+    width: max-content;
+  }
+  .HotspotAnnotation p {
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+  .HotspotAnnotation h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
   }
 }
 @media screen and (min-width: 1920px) {
   model-viewer {
     height: 1000px;
+  }
+  .HotspotAnnotation {
+    left: calc(100% + 1em);
+    max-width: 350px;
+    width: max-content;
+  }
+  .HotspotAnnotation p {
+    font-size: 20px;
+  }
+  .HotspotAnnotation h2 {
+    margin-top: 10px;
+    font-size: 27px;
+    margin-bottom: 5px;
   }
 }
 #xray-box {
@@ -434,6 +476,22 @@ model-viewer > #ar-prompt > img {
   padding-top: 10px;
 }
 
+#circles button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#circles button .fa-solid {
+  font-size: 30px;
+  color: #008170;
+  margin: 5px;
+}
+
+#circles button .fa-solid:hover {
+  color: #232D3F;
+}
+
 @media screen and (min-width: 768px) {
   #hero-box h2 {
     font-size: 70px;
@@ -476,8 +534,8 @@ model-viewer > #ar-prompt > img {
     margin: auto;
     display: block;
   }
-  #circles img {
-    height: 15px;
+  #circles button .fa-solid {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -511,8 +569,9 @@ model-viewer > #ar-prompt > img {
   #review-text-box {
     height: 320px;
   }
-  #circles img {
-    height: 27px;
+  #circles button .fa-solid {
+    font-size: 55px;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -546,7 +605,8 @@ model-viewer > #ar-prompt > img {
   #review-text-box {
     height: 500px;
   }
-  #circles img {
-    height: 40px;
+  #circles button .fa-solid {
+    font-size: 65px;
+    margin: 15px;
   }
 }/*# sourceMappingURL=main.css.map */

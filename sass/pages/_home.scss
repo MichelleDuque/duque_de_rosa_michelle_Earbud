@@ -106,8 +106,23 @@
 #circles{
     padding-top: 10px;
 }
+#circles button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 
+#circles button .fa-solid{
+    font-size: 30px;
+    color: h.$secondary-color;
+    margin: 5px;
+}
+
+
+#circles button .fa-solid:hover{
+    color: h.$primary-color;
+}
 
 @media screen and (min-width:768px) {
 
@@ -173,8 +188,8 @@
         display: block;
     }
 
-    #circles img{
-        height: 15px;
+    #circles button .fa-solid{
+        font-size: 40px;
     }
 }
 
@@ -228,8 +243,9 @@
         height: 320px;
     }
 
-    #circles img{
-        height: 27px;
+    #circles button .fa-solid{
+        font-size: 55px;
+        margin: 10px;
     }
 
 }
@@ -284,8 +300,9 @@
         height: 500px;
     }
 
-    #circles img{
-        height: 40px;
+    #circles button .fa-solid{
+        font-size: 65px;
+        margin: 15px;
     }
 
 }

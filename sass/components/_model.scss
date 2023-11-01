@@ -41,9 +41,9 @@
     color: rgba(0, 0, 0, 0.8);
     display: block;
     font-size: 18px;
-    font-weight: 700;
-    left: calc(100% + 1em);
-    max-width: 300px;
+    font-weight: 600;
+    left: calc(50% + 1em);
+    max-width: 100px;
     overflow-wrap: break-word;
     padding: 0.5em 1em;
     position: absolute;
@@ -54,20 +54,21 @@
 
   .HotspotAnnotation p {
     color: #333;
-    line-height: 22px;
+    line-height: 10px;
+    font-size: 10px;
     font-weight: 300;
     font-family: b.$body-font-family;
   }
 
   .HotspotAnnotation h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 5px;
     font-family: b.$heading-font-family;
   }
 
   model-viewer::part(default-progress-bar){
     height: 30px;
-    background-color: #E89B36;
+    background-color: b.$primary-color;
   }
   
   /* AR Rules */
@@ -135,15 +136,69 @@
   width: 50%;
 }
 
+@media screen and (min-width:768px){
+
+  .HotspotAnnotation{
+    max-width: 200px;
+    top: 50%;
+  }
+
+  .HotspotAnnotation p {
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .HotspotAnnotation h2 {
+    font-size: 18px;
+  }
+
+}
+
 
 @media screen and (min-width:1200px){
   model-viewer{
     height: 700px;
   }
+
+  .HotspotAnnotation{
+    left: calc(100% + 1em);
+    max-width: 300px;
+    width: max-content;
+  }
+
+  .HotspotAnnotation p {
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .HotspotAnnotation h2 {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
 }
 
 @media screen and (min-width:1920px){
   model-viewer{
     height: 1000px;
   }
+
+  .HotspotAnnotation{
+    left: calc(100% + 1em);
+    max-width: 350px;
+    width: max-content;
+  }
+
+  .HotspotAnnotation p {
+    font-size: 20px;
+  }
+
+  .HotspotAnnotation h2 {
+    margin-top: 10px;
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+  
 }
