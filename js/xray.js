@@ -20,7 +20,7 @@
 
     function onUp(){
         dragging = false;
-        dragging = true;+console.log("on Up called");
+        dragging = true; console.log("on Up called");
     }
 
     function onMove(e){

@@ -31,14 +31,14 @@
         <div class="box col-start-4 col-end-5" id="burger-nav">
             <h2 class="hidden">Main Navigation</h2>
 			<button class="hamburger">
-				<img src="images/burger_menu.png" alt="Burger Menu" id="hamburger-image">
+				<img src="images/burger_menu_2.png" alt="Burger Menu" id="hamburger-image">
 			</button>  
         </div>
         <nav class="mobile-nav">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#info-box-main">ABOUT</a></li>
+            <li><a href="#earbuds-box">FEATURES</a></li>
+            <li><a href="#review-box">REVIEWS</a></li>
         </nav>
     </header>
 
@@ -48,21 +48,17 @@
         <section class="grid-con" id="home-section">
             <h2 class="hidden">Home Section - Rock Revolution</h2>
             <div class="box col-span-full m-col-start-3 m-col-end-11 l-col-start-4 l-col-end-10 xl-col-start-3 xl-col-end-11" id="hero-box">
-                <div>
+                <div id="heading-text">
                     <h2><span>DISCOVER</span>
                         <br>
                         ROCK REVOLUTION
                     </h2>
                 </div>
-                <div >
+                <div id="earbuds-image-hero">
                     <img src="images/earbuds-hero.svg" alt="Blue Earbuds">
                 </div>
             </div>
 
-            
-            <!-- <div class="box col-span-full m-col-start-1 m-col-end-6 l-col-start-1 l-col-end-6 xl-col-start-1 xl-col-end-6" id="info-box-title">
-                <h2>FROM HEAVY METAL<br>TO GLAM ROCK</h2>
-            </div> -->
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="info-box-main">
                 <div id="info-box-title">
                 <h2>FROM HEAVY METAL<br>TO GLAM ROCK</h2>
@@ -153,7 +149,7 @@
             </div>
 
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-span-full" id="phrase-box">
-                <h2><span>We're Gonna</span><br>Rock Around the<br>Clock
+                <h2 id="text-phrase-box"><span>We're Gonna</span><br>Rock Around the<br>Clock
                 </h2>
             </div>
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="xray-box">
@@ -204,13 +200,15 @@
         </section>
 
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.7.4/smooth-scrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="js/gsap_elements.js"></script>
     <script src="js/reviews.js"></script>
     <script src="js/xray.js"></script>
     <script src="js/burger.js"></script>
