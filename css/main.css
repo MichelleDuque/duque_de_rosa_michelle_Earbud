@@ -49,7 +49,7 @@ p {
     margin-right: 23px;
   }
   #main-nav ul li a {
-    font-size: 25px;
+    font-size: 20px;
     text-decoration: none;
     transition: all 0.5s ease-in-out;
     color: #008170;
@@ -64,7 +64,7 @@ p {
 }
 @media screen and (min-width: 1200px) {
   #main-nav ul li a {
-    font-size: 40px;
+    font-size: 27px;
   }
   #logo-section img {
     height: 80px;
@@ -72,7 +72,7 @@ p {
 }
 @media screen and (min-width: 1920px) {
   #main-nav ul li a {
-    font-size: 50px;
+    font-size: 35px;
   }
   #logo-section img {
     height: 100px;
