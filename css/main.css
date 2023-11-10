@@ -22,6 +22,7 @@ p {
 #logo-section {
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 #burger-nav {
@@ -81,6 +82,8 @@ p {
 #burger-nav {
   padding: 0;
   background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .hamburger {
@@ -95,6 +98,7 @@ p {
 }
 
 .hamburger img {
+  height: 90px;
   width: 100%;
 }
 
@@ -107,8 +111,9 @@ p {
   display: block;
   z-index: 98;
   background-color: #0F0F0F;
-  padding-top: 120px;
+  padding-top: 150px;
   transition: 0.4s;
+  list-style-type: none;
 }
 
 .mobile-nav.is-active {
@@ -442,6 +447,10 @@ model-viewer > #ar-prompt > img {
   color: #008170;
 }
 
+.icon-info img {
+  height: 50px;
+}
+
 #phrase-box {
   padding: 0;
   background-color: transparent;
@@ -528,8 +537,8 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     display: flex;
   }
-  .info-box-divided img {
-    height: 43px;
+  .icon-info img {
+    height: 55px;
     max-width: none;
     margin-right: 10px;
   }
@@ -565,7 +574,7 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     font-size: 19px;
   }
-  .info-box-divided img {
+  .icon-info img {
     height: 71px;
   }
   #phrase-box h2 {
@@ -601,7 +610,7 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     font-size: 30px;
   }
-  .info-box-divided img {
+  .icon-info img {
     height: 106px;
   }
   #phrase-box h2 {

@@ -50,6 +50,9 @@
     color: h.$secondary-color;
 }
 
+.icon-info img{
+    height: 50px;
+}
 
 //Phrase
 
@@ -157,8 +160,8 @@
         display: flex;
     }
 
-    .info-box-divided img{
-        height: 43px;
+    .icon-info img{
+        height: 55px;
         max-width: none;
         margin-right: 10px;
     }
@@ -215,9 +218,11 @@
         font-size: 19px;
     }
 
-    .info-box-divided img{
+    .icon-info img{
         height: 71px;
     }
+
+
 
     //Phrase
 
@@ -272,7 +277,7 @@
         font-size: 30px;
     }
 
-    .info-box-divided img{
+    .icon-info img{
         height: 106px;
     }
 

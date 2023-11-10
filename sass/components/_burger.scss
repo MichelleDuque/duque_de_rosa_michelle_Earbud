@@ -4,14 +4,16 @@
 #burger-nav{
   padding: 0;
   background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
 }
   
 .hamburger {
+
 	position: relative;
 	display: block;
 	cursor: pointer;
-  z-index: 100;
-	
+  	z-index: 100;
 	appearance: none;
 	background: none;
 	outline: none;
@@ -19,7 +21,8 @@
 }
 
 .hamburger img{
-  width: 100%;
+	height: 90px;
+  	width: 100%;
 }
 
 
@@ -32,8 +35,9 @@
 	display: block;
 	z-index: 98;
 	background-color: b.$accent-color;
-	padding-top: 120px;
+	padding-top: 150px;
 	transition: 0.4s;
+	list-style-type: none
 }
 
 .mobile-nav.is-active {
