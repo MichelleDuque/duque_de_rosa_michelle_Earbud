@@ -1,7 +1,8 @@
+@use '../abstracts/variables' as x;
 
 #xray-box{
     padding: 0;
-    background-color: transparent;
+    background: x.$background-color-degrade;
 }
 
 #outerShell{
@@ -12,19 +13,24 @@
 
 @media screen and (min-width:1200px) {
 
+    #outerShell{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     #mobile-tablet-view{
         display: none;
     }
 
     #outerShell {
         display: block;
-        max-width: 1920px;
+        max-width: 1200px;
         border: solid 1px #666;
     }
     
     #imageCon {
         position: relative;
-        max-width: 1920px;
+        max-width: 1200px;
         height: 100vh;
     }
     
@@ -38,20 +44,20 @@
     .image-right {
         background: url(../images/x-ray.jpg) no-repeat;
         background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+        // background-position: center center;
+        // background-attachment: fixed;
     }
     
     .image-left {
         background: url(../images/ear_bud_red.jpg) no-repeat;
         background-size: cover;
-        background-position: center center;
+        // background-position: center center;
         width: 50%;
-        background-attachment: fixed;
+        // background-attachment: fixed;
     }
     
     .image-drag {
-        background-color: #666;
+        background-color: x.$secondary-color;
         left: 50%;
         width: 10px;
         cursor: pointer;

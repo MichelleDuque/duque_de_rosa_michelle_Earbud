@@ -156,10 +156,14 @@ model-viewer {
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   display: none;
   transition: all 1s ease-in-out;
+}
+
+.Hotspot:hover {
+  background: url(../images/hotspot2.svg) center no-repeat;
 }
 
 .Hotspot:not([data-visible]) {
@@ -275,6 +279,10 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 768px) {
+  .Hotspot {
+    width: 40px;
+    height: 40px;
+  }
   .HotspotAnnotation {
     max-width: 200px;
     top: 50%;
@@ -290,6 +298,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 700px;
+  }
+  .Hotspot {
+    width: 50px;
+    height: 50px;
   }
   .HotspotAnnotation {
     left: calc(100% + 1em);
@@ -311,6 +323,10 @@ model-viewer > #ar-prompt > img {
   model-viewer {
     height: 1000px;
   }
+  .Hotspot {
+    width: 55px;
+    height: 55px;
+  }
   .HotspotAnnotation {
     left: calc(100% + 1em);
     max-width: 350px;
@@ -327,7 +343,7 @@ model-viewer > #ar-prompt > img {
 }
 #xray-box {
   padding: 0;
-  background-color: transparent;
+  background: linear-gradient(90deg, rgb(0, 47, 129) 0%, rgb(0, 129, 112) 50%, rgb(0, 88, 129) 100%);
 }
 
 #outerShell {
@@ -335,17 +351,21 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 1200px) {
+  #outerShell {
+    margin-left: auto;
+    margin-right: auto;
+  }
   #mobile-tablet-view {
     display: none;
   }
   #outerShell {
     display: block;
-    max-width: 1920px;
+    max-width: 1200px;
     border: solid 1px #666;
   }
   #imageCon {
     position: relative;
-    max-width: 1920px;
+    max-width: 1200px;
     height: 100vh;
   }
   .slideImage {
@@ -357,18 +377,14 @@ model-viewer > #ar-prompt > img {
   .image-right {
     background: url(../images/x-ray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
   }
   .image-left {
     background: url(../images/ear_bud_red.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
-    background-color: #666;
+    background-color: #008170;
     left: 50%;
     width: 10px;
     cursor: pointer;
@@ -451,6 +467,7 @@ model-viewer > #ar-prompt > img {
 
 #box-review-info img {
   margin-top: 30px;
+  height: 200px;
 }
 
 #stars-review img {
