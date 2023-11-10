@@ -102,7 +102,7 @@ p {
   width: 100%;
 }
 
-.mobile-nav {
+.burger_menu {
   position: fixed;
   top: 0;
   left: 100%;
@@ -111,16 +111,16 @@ p {
   display: block;
   z-index: 98;
   background-color: #0F0F0F;
-  padding-top: 150px;
+  padding-top: 120px;
   transition: 0.4s;
   list-style-type: none;
 }
 
-.mobile-nav.is-active {
+.burger_menu.is-active {
   left: 0;
 }
 
-.mobile-nav a {
+.burger_menu a {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -132,12 +132,12 @@ p {
   text-decoration: none;
 }
 
-.mobile-nav a:hover {
+.burger_menu a:hover {
   background-color: #232D3F;
 }
 
 @media (min-width: 768px) {
-  .mobile-nav {
+  .burger_menu {
     display: none;
   }
   .hamburger {
@@ -348,7 +348,7 @@ model-viewer > #ar-prompt > img {
 }
 #xray-box {
   padding: 0;
-  background: linear-gradient(90deg, rgb(0, 47, 129) 0%, rgb(0, 129, 112) 50%, rgb(0, 88, 129) 100%);
+  background-color: transparent;
 }
 
 #outerShell {
@@ -356,6 +356,9 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 1200px) {
+  #xray-box {
+    background: linear-gradient(90deg, rgb(0, 47, 129) 0%, rgb(0, 129, 112) 50%, rgb(0, 88, 129) 100%);
+  }
   #outerShell {
     margin-left: auto;
     margin-right: auto;

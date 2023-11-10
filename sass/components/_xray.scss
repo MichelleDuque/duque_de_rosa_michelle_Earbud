@@ -2,7 +2,7 @@
 
 #xray-box{
     padding: 0;
-    background: x.$background-color-degrade;
+    background-color: transparent;
 }
 
 #outerShell{
@@ -10,8 +10,10 @@
 }
 
 
-
 @media screen and (min-width:1200px) {
+    #xray-box{
+        background: x.$background-color-degrade;
+    }
 
     #outerShell{
         margin-left: auto;

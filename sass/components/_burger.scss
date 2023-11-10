@@ -26,7 +26,7 @@
 }
 
 
-.mobile-nav {
+.burger_menu {
 	position: fixed;
 	top: 0;
 	left: 100%;
@@ -35,16 +35,16 @@
 	display: block;
 	z-index: 98;
 	background-color: b.$accent-color;
-	padding-top: 150px;
+	padding-top: 120px;
 	transition: 0.4s;
 	list-style-type: none
 }
 
-.mobile-nav.is-active {
+.burger_menu.is-active {
 	left: 0;
 }
 
-.mobile-nav a {
+.burger_menu a {
 	display: block;
 	width: 100%;
 	max-width: 200px;
@@ -57,12 +57,12 @@
 	text-decoration: none;
 }
 
-.mobile-nav a:hover {
+.burger_menu a:hover {
 	background-color: b.$primary-color;
 }
 
 @media (min-width: 768px) {
-	.mobile-nav {
+	.burger_menu {
 		display: none;
 	}
 
