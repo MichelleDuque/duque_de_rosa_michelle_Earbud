@@ -81,16 +81,6 @@
         },
         "-=2"
       );
-
-
-      // .from("#phrase-box", { opacity: 0 })
-
-
-
-      // .from("#text-phrase-box", { y : innerHeight * 1 })
     
-      
-
-   
   
 })();
