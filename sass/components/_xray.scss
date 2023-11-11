@@ -1,3 +1,4 @@
+@use '../abstracts/variables' as x;
 
 #xray-box{
     padding: 0;
@@ -9,8 +10,15 @@
 }
 
 
-
 @media screen and (min-width:1200px) {
+    #xray-box{
+        background: x.$background-color-degrade;
+    }
+
+    #outerShell{
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     #mobile-tablet-view{
         display: none;
@@ -18,43 +26,46 @@
 
     #outerShell {
         display: block;
-        max-width: 1920px;
+        max-width: 1200px;
         border: solid 1px #666;
     }
     
     #imageCon {
         position: relative;
-        max-width: 1920px;
-        height: 100vh;
+        max-width: 1200px;
+        height: 700px;
     }
     
     .slideImage {
         position: absolute;
         left: 0;
         right: 0;
-        height: 100vh;
+        height: 700px;
     }
     
     .image-right {
         background: url(../images/x-ray.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
-        background-attachment: fixed;
+        background-size: 1200px 700px;
+        // background-position: center;
+        // background-position: center center;
+        // background-attachment: fixed;
     }
     
     .image-left {
         background: url(../images/ear_bud_red.jpg) no-repeat;
-        background-size: cover;
-        background-position: center center;
+        // background-position: -30px;
+        background-size: 1200px 700px;
+        // background-position: center center;
         width: 50%;
-        background-attachment: fixed;
+        // background-attachment: fixed;
     }
     
     .image-drag {
-        background-color: #666;
+        background-color: x.$secondary-color;
         left: 50%;
         width: 10px;
         cursor: pointer;
     }
     
 }
+

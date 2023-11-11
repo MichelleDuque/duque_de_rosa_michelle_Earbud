@@ -41,8 +41,8 @@
     //Events Listeners
 
     drag.addEventListener("mousedown", onDown);
-    document.body.addEventListener("mouseup", onUp);
-    document.body.addEventListener("mousemove", onMove);
+    imageCon.addEventListener("mouseup", onUp);
+    imageCon.addEventListener("mousemove", onMove);
 
   
 })();

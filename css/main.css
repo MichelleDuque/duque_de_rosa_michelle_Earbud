@@ -22,6 +22,7 @@ p {
 #logo-section {
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 #burger-nav {
@@ -81,6 +82,8 @@ p {
 #burger-nav {
   padding: 0;
   background-color: transparent;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .hamburger {
@@ -95,10 +98,11 @@ p {
 }
 
 .hamburger img {
+  height: 90px;
   width: 100%;
 }
 
-.mobile-nav {
+.burger_menu {
   position: fixed;
   top: 0;
   left: 100%;
@@ -109,13 +113,14 @@ p {
   background-color: #0F0F0F;
   padding-top: 120px;
   transition: 0.4s;
+  list-style-type: none;
 }
 
-.mobile-nav.is-active {
+.burger_menu.is-active {
   left: 0;
 }
 
-.mobile-nav a {
+.burger_menu a {
   display: block;
   width: 100%;
   max-width: 200px;
@@ -127,12 +132,12 @@ p {
   text-decoration: none;
 }
 
-.mobile-nav a:hover {
+.burger_menu a:hover {
   background-color: #232D3F;
 }
 
 @media (min-width: 768px) {
-  .mobile-nav {
+  .burger_menu {
     display: none;
   }
   .hamburger {
@@ -156,10 +161,14 @@ model-viewer {
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0px;
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   display: none;
   transition: all 1s ease-in-out;
+}
+
+.Hotspot:hover {
+  background: url(../images/hotspot2.svg) center no-repeat;
 }
 
 .Hotspot:not([data-visible]) {
@@ -275,6 +284,10 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 768px) {
+  .Hotspot {
+    width: 40px;
+    height: 40px;
+  }
   .HotspotAnnotation {
     max-width: 200px;
     top: 50%;
@@ -290,6 +303,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1200px) {
   model-viewer {
     height: 700px;
+  }
+  .Hotspot {
+    width: 50px;
+    height: 50px;
   }
   .HotspotAnnotation {
     left: calc(100% + 1em);
@@ -310,6 +327,10 @@ model-viewer > #ar-prompt > img {
 @media screen and (min-width: 1920px) {
   model-viewer {
     height: 1000px;
+  }
+  .Hotspot {
+    width: 55px;
+    height: 55px;
   }
   .HotspotAnnotation {
     left: calc(100% + 1em);
@@ -335,40 +356,43 @@ model-viewer > #ar-prompt > img {
 }
 
 @media screen and (min-width: 1200px) {
+  #xray-box {
+    background: linear-gradient(90deg, rgb(0, 47, 129) 0%, rgb(0, 129, 112) 50%, rgb(0, 88, 129) 100%);
+  }
+  #outerShell {
+    margin-left: auto;
+    margin-right: auto;
+  }
   #mobile-tablet-view {
     display: none;
   }
   #outerShell {
     display: block;
-    max-width: 1920px;
+    max-width: 1200px;
     border: solid 1px #666;
   }
   #imageCon {
     position: relative;
-    max-width: 1920px;
-    height: 100vh;
+    max-width: 1200px;
+    height: 700px;
   }
   .slideImage {
     position: absolute;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 700px;
   }
   .image-right {
     background: url(../images/x-ray.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    background-size: 1200px 700px;
   }
   .image-left {
     background: url(../images/ear_bud_red.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size: 1200px 700px;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
-    background-color: #666;
+    background-color: #008170;
     left: 50%;
     width: 10px;
     cursor: pointer;
@@ -426,6 +450,10 @@ model-viewer > #ar-prompt > img {
   color: #008170;
 }
 
+.icon-info img {
+  height: 50px;
+}
+
 #phrase-box {
   padding: 0;
   background-color: transparent;
@@ -451,6 +479,7 @@ model-viewer > #ar-prompt > img {
 
 #box-review-info img {
   margin-top: 30px;
+  height: 200px;
 }
 
 #stars-review img {
@@ -511,8 +540,8 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     display: flex;
   }
-  .info-box-divided img {
-    height: 43px;
+  .icon-info img {
+    height: 55px;
     max-width: none;
     margin-right: 10px;
   }
@@ -548,7 +577,7 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     font-size: 19px;
   }
-  .info-box-divided img {
+  .icon-info img {
     height: 71px;
   }
   #phrase-box h2 {
@@ -584,7 +613,7 @@ model-viewer > #ar-prompt > img {
   .info-box-divided {
     font-size: 30px;
   }
-  .info-box-divided img {
+  .icon-info img {
     height: 106px;
   }
   #phrase-box h2 {

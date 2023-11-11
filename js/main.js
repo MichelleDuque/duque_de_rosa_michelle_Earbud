@@ -13,20 +13,32 @@
     const infoBoxes = [{
       title: "Noise-cancelling speakers" ,
       text: "Great wireless earbuds are increasingly being made with active noise reduction as a meanly feature, it will generate can a more tranquil environment and makes your favorite music easier to listen.",
-      image:"images/image1.jpg"
+      image:"images/image1_bg56am_c_scale,w_400.jpg",
+      image_src_set: "images/image1_bg56am_c_scale,w_50.jpg 50w, images/image1_bg56am_c_scale,w_400.jpg 400w",
+      image_size: "100vw",
+      image_alt: "Women listening music with the earbuds"
     }
     ,{
         title: "Rock and Roll All Night - Logo",
         text: "Rock Revolution Logo, after all you should show how passionate you are for you favorite music genre.",
-        image:"images/image2.png"
+        image:"images/image2_zx9xqn_c_scale,w_400.png",
+        image_src_set: "images/image2_zx9xqn_c_scale,w_50.png 50w, images/image2_zx9xqn_c_scale,w_307.png 307w, images/image2_zx9xqn_c_scale,w_400.png 400w",
+        image_size: "100vw",
+        image_alt: "Earbuds and case"
     },{
       title: "The Most Comfortable Earbuds Base",
       text:"With Rock Revolution you have variety of options, with five different sets of ear tips in varying sizes so you can choose the one that fits better for you.",
-      image:"images/image3.png"
+      image:"images/image3_cu3gbw_c_scale,w_400.png",
+      image_src_set: "images/image3_cu3gbw_c_scale,w_50.png 50w, images/image3_cu3gbw_c_scale,w_309.png 309w, images/image3_cu3gbw_c_scale,w_400.png 400w",
+      image_size: "100vw",
+      image_alt: "Red Earbuds"
     },{
       title: "The Best Sound",
       text: "It is like you are in a soundstage, Rock Revolution Earbuds includes features where you can adjust your sound levels.",
-      image:"images/image4.jpg"
+      image:"images/image4_qwmri0_c_scale,w_400.jpg",
+      image_src_set: "images/image4_qwmri0_c_scale,w_50.jpg 50w, images/image4_qwmri0_c_scale,w_400.jpg 400w",
+      image_size: "100vw",
+      image_alt: "People dancing"
     }
   ]
   
@@ -48,6 +60,10 @@
         const textItem = document.createElement("p");
   
         imageContent.src = infoBox.image;
+        imageContent.sizes = infoBox.image_size;
+        imageContent.srcset = infoBox.image_src_set;
+        imageContent.alt = infoBox.image_alt;
+
         titleItem.textContent = infoBox.title;
         textItem.textContent = infoBox.text;
   
@@ -56,6 +72,8 @@
         selected.appendChild(textItem);
 
         imageContent.classList.add("image-content");
+        titleItem.classList.add("hotspot-text")
+        textItem.classList.add("hotspot-p")
 
 
       // Texcontent
@@ -75,6 +93,39 @@
       //since the slot value matches the id value I can use the slot value as a selector to get to the div I want.
       let selected = document.querySelector(`#${this.slot}`);
       gsap.to(selected, 1, { autoAlpha: 1 });
+
+          gsap.fromTo('.hotspot-text', {
+            y: 35,
+            opacity: 0,
+          },
+          {
+          delay: 0.5, 
+          duration: 1, 
+          y: 0,
+          opacity: 1,
+          ease: 'power2.easeOut',
+          stagger: {
+            from: 'start', 
+            amount: 0.5, 
+          },
+        })
+
+        gsap.fromTo('.hotspot-p', {
+          y: 35,
+          opacity: 0,
+        },
+        {
+        delay: 0.5, 
+        duration: 1, 
+        y: 0,
+        opacity: 1,
+        ease: 'power2.easeOut',
+        stagger: {
+          from: 'start', 
+          amount: 0.5, 
+        },
+      })
+
     }
   
     function hideInfo() {

@@ -25,16 +25,16 @@
         </nav>
 
         <div class="box col-start-1 col-end-2 m-col-start-11 m-col-end-13 l-col-start-11 l-col-end-13 xl-col-start-11 xl-col-end-13" id="logo-section">
-            <img id="image-logo" src="images/white_logo.svg" alt="Rock Revolution Logo">
+            <a href="index.html"><img id="image-logo" src="images/white_logo.svg" alt="Rock Revolution Logo"></a>
         </div>
 
         <div class="box col-start-4 col-end-5" id="burger-nav">
             <h2 class="hidden">Main Navigation</h2>
 			<button class="hamburger">
-				<img src="images/burger_menu_2.png" alt="Burger Menu" id="hamburger-image">
+				<img src="images/burger_menu.svg" alt="Burger Menu" id="hamburger-image">
 			</button>  
         </div>
-        <nav class="mobile-nav">
+        <nav class="burger_menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#info-box-main">ABOUT</a></li>
             <li><a href="#earbuds-box">FEATURES</a></li>
@@ -65,47 +65,41 @@
                 </div>
                 <div>
                 <div class="info-box-divided">
-                    <div>
-                    <img src="images/bass.png" alt="">
+                    <div class="icon-info">
+                    <img src="images/bass.svg" alt="Bass Instrument">
                     </div>
                     <div>
-                    <h3>Characteristic 1</h3>
+                    <h3>Bassline Sound</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.  Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s,  when an 
-                        unknown printer took a galley of type and scrambled it to 
-                        make a type specimen book.
+                        Do you find that standard earbuds are insufficient? 
+                        At the top of the song and the bass drop, do you feel like you are missing something? 
+                        The sound characteristics, which are heavily bass-heavy, give mixes more a bang, warmth, and impact.
                     </p>
                     </div>
                 </div>
                 <div class="info-box-divided">
-                    <div>
-                    <img src="images/drums.png" alt="">
+                    <div class="icon-info">
+                    <img src="images/drums.svg" alt="Drums Instrument">
                     </div>
                     <div>
-                    <h3>Characteristic 2</h3>
+                    <h3>Perfect for Drummers</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.  Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s,  when an 
-                        unknown printer took a galley of type and scrambled it to 
-                        make a type specimen book.
+                        For every drummer, high-quality isolation headphones are essential. 
+                        Rock Revolution Earbuds envelop completely your ears and create a tight seal 
+                        to filter out loud percussion sounds so you don't have to crank up your music. 
                     </p>
                     </div>
                 </div>
                 <div class="info-box-divided">
-                    <div>
-                    <img src="images/microphone.png" alt="">
+                    <div class="icon-info">
+                    <img src="images/microphone.svg" alt="Microphone">
                     </div>
                     <div>
-                    <h3>Characteristic 2</h3>
+                    <h3>Super Hearing</h3>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.  Lorem Ipsum has been the industry's 
-                        standard dummy text ever since the 1500s,  when an 
-                        unknown printer took a galley of type and scrambled it to 
-                        make a type specimen book.
+                        You are able to customize the ambient sound with Rock Revolution Earbuds. 
+                        We make it possible to individually select which sounds you want muted and 
+                        which you want to hear more clearly.
                     </p>
                     </div>
                 </div>
@@ -155,8 +149,21 @@
             <div class="box col-span-full m-col-span-full l-col-span-full xl-col-span-full" id="xray-box">
                 <h2 class="hidden">X-Ray Revealer</h2>
                 <div id="mobile-tablet-view">
-                    <img src="images/x-ray.jpg" alt="xray earbud">
-                    <img src="images/ear_bud_red.jpg" alt="Regular earbud">
+                    <img sizes="100vw"
+                    srcset="images/x-ray_tawdce_c_scale,w_320.jpg 320w,
+                    images/x-ray_tawdce_c_scale,w_1129.jpg 1129w,
+                    images/x-ray_tawdce_c_scale,w_1657.jpg 1657w,
+                    images/x-ray_tawdce_c_scale,w_1920.jpg 1920w"
+                    src="x-ray_tawdce_c_scale,w_1920.jpg" 
+                    alt="xray earbud">
+                    <img sizes="100vw"
+                    srcset="images/ear_bud_red_gojtq3_c_scale,w_320.jpg 320w,
+                    images/ear_bud_red_gojtq3_c_scale,w_1142.jpg 1142w,
+                    images/ear_bud_red_gojtq3_c_scale,w_1694.jpg 1694w,
+                    images/ear_bud_red_gojtq3_c_scale,w_1920.jpg 1920w" 
+                    sizes="100vw"
+                    src="images/ear_bud_red_gojtq3_c_scale,w_1920.jpg" 
+                    alt="Regular earbud">
                 </div>
                 <div id="outerShell">
                     <div id="imageCon">
@@ -167,7 +174,7 @@
                         <!-- Drag bar -->
                         <div class="slideImage image-drag"></div>
                     </div>
-            </div>
+                </div>
             </div>
             <div class="box col-span-full m-col-span-full l-col-start-2 l-col-end-12 xl-col-span-full" id="review-box">
                 <h2 class="hidden">Reviews</h2>
@@ -176,11 +183,11 @@
                     </div>
                     <div id="information-responsive">
                         <div id="stars-review">
-                            <img src="images/star.png" alt="Blue Star">
-                            <img src="images/star.png" alt="Blue Star">
-                            <img src="images/star.png" alt="Blue Star">
-                            <img src="images/star.png" alt="Blue Star">
-                            <img src="images/star.png" alt="Blue Star">
+                            <img src="images/star.svg" alt="Blue Star">
+                            <img src="images/star.svg" alt="Blue Star">
+                            <img src="images/star.svg" alt="Blue Star">
+                            <img src="images/star.svg" alt="Blue Star">
+                            <img src="images/star.svg" alt="Blue Star">
                         </div>
                     <div id="review-text-box">
                     </div>
