@@ -33,26 +33,28 @@
     #imageCon {
         position: relative;
         max-width: 1200px;
-        height: 100vh;
+        height: 700px;
     }
     
     .slideImage {
         position: absolute;
         left: 0;
         right: 0;
-        height: 100vh;
+        height: 700px;
     }
     
     .image-right {
         background: url(../images/x-ray.jpg) no-repeat;
-        background-size: cover;
+        background-size: 1200px 700px;
+        // background-position: center;
         // background-position: center center;
         // background-attachment: fixed;
     }
     
     .image-left {
         background: url(../images/ear_bud_red.jpg) no-repeat;
-        background-size: cover;
+        // background-position: -30px;
+        background-size: 1200px 700px;
         // background-position: center center;
         width: 50%;
         // background-attachment: fixed;
@@ -66,3 +68,4 @@
     }
     
 }
+
